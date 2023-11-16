@@ -34,8 +34,9 @@ public class UcakBiletiFiyatHesabi {
             if (yolculuk_tipi == 2) {
                 yolculuk_tipi_indirimi = toplam_tutar * 0.2f;
                 // System.out.println("Yolculuk Tipi İndirimi = " + yolculuk_tipi_indirimi);
+                toplam_tutar -= yolculuk_tipi_indirimi;
+                toplam_tutar *= 2; // Gidiş dönüş olduğu için 2 ile çarpılıyor.
             }
-            toplam_tutar -= yolculuk_tipi_indirimi;
             
             System.out.println("Toplam Tutar = " + toplam_tutar);
         } else {
