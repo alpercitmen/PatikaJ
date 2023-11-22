@@ -7,9 +7,10 @@ public class UcveDordeTamBolunenler {
 
             System.out.print("Sayı giriniz: ");
             sayi = input.nextInt();
-            for (sayi = 1; sayi <= 100; sayi++) {
-                if (sayi % 3 == 0 && sayi % 4 == 0) {
-                    toplam += sayi;
+            for (int i = 1; i <= sayi; i++) {
+                if (i % 3 == 0 && i % 4 == 0) {
+                    System.out.println("Sayı: " + i);
+                    toplam += i;
                     sayac++;
                 }
             }
